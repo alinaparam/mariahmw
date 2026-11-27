@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Masha · Breakfast Around The World</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&family=Figtree:wght@500;600;700;800&display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F6F1EA;font-family:Figtree,sans-serif;color:#1F2328}
+.wrap{max-width:880px;margin:0 auto;padding:28px 16px 48px;display:grid;gap:18px}
+.tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:7px;background:#DCEEF5;color:#155D7A}
+h1{font-family:Fraunces,serif;font-weight:800;font-size:clamp(28px,6vw,42px);line-height:1.08;margin:10px 0 4px}
+h2{font-family:Fraunces,serif;font-weight:800;font-size:24px;margin:0}
+.sub{margin:0;color:#5E676A;font-weight:600;font-size:16px}
+.card{background:#fff;border:1px solid #E4DDD3;border-radius:22px;padding:18px 20px;display:grid;gap:14px}
+.video{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#111}
+.video{display:block}.video img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.video .play{position:absolute;inset:0;margin:auto;width:76px;height:54px;border-radius:14px;background:#E0222Bdd;color:#fff;font-size:26px;display:grid;place-items:center}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.dl{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:800 17px Figtree,sans-serif;color:#fff;background:#E0567A;padding:13px 22px;border-radius:14px;box-shadow:0 5px 0 #A8304F,0 8px 18px rgba(168,48,79,.25);transition:transform .08s,box-shadow .08s}
+.dl:active{transform:translateY(5px);box-shadow:0 0 0 #A8304F}
+.op{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:800 17px Figtree,sans-serif;color:#155D7A;background:#fff;padding:11px 20px;border-radius:14px;border:2px solid #1F7FA6;box-shadow:0 5px 0 #1F7FA6;transition:transform .08s,box-shadow .08s}
+.op:active{transform:translateY(5px);box-shadow:0 0 0 #1F7FA6}
+.steps{margin:0;padding-left:20px;display:grid;gap:6px;font-weight:600;line-height:1.5}
+.steps b{color:#A8304F}
+.qs{list-style:none;margin:0;padding:0;display:grid;gap:8px;counter-reset:q}
+.qs li{counter-increment:q;display:flex;gap:12px;align-items:flex-start;background:#FAF7F2;border:1px solid #EFE8DD;border-radius:14px;padding:11px 14px;font-weight:700;font-size:17px;line-height:1.45;cursor:pointer;transition:.15s}
+.qs li::before{content:counter(q);flex:none;width:28px;height:28px;border-radius:50%;background:#1F7FA6;color:#fff;font:800 14px Figtree,sans-serif;display:grid;place-items:center;margin-top:-1px}
+.qs li.done{background:#E9F6EF;border-color:#1E7F4F;color:#1D4A33}.qs li.done::before{content:"✓";background:#1E7F4F}
+.note{background:#FFF6DD;border-radius:14px;padding:12px 16px;font-weight:700;color:#5A4300;line-height:1.5}
+</style></head>
+<body><div class="wrap">
+<div><span class="tag">🎧 Homework · Video</span><h1>Breakfast Around The World 🥐</h1><p class="sub">Видео про завтраки в разных странах и вопросы к нему</p></div>
+
+<div class="card">
+  <h2>1. Watch the video</h2>
+  <a class="video" href="https://www.youtube.com/watch?v=EFKgGyUguNA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/EFKgGyUguNA/hqdefault.jpg" alt="Breakfast Around The World"><span class="play">▶</span></a>
+  <div class="btns">
+    <a class="dl" href="https://www.youtube.com/watch?v=EFKgGyUguNA" target="_blank" rel="noopener">▶ Открыть на YouTube</a>
+    <a class="op" href="https://chromewebstore.google.com/detail/doublesubs/cfmeoknomhdgcbcmgmpbbjiggfboniie" target="_blank" rel="noopener">🔤 Расширение DoubleSubs</a>
+  </div>
+  <ol class="steps">
+    <li>Установи расширение <b>DoubleSubs</b> для Chrome — тогда на YouTube будут сразу <b>два субтитра</b>: английские и русские.</li>
+    <li>Открой видео на YouTube и включи двойные субтитры.</li>
+    <li>Если быстро — поставь скорость <b>0.75</b> (⚙️ → Скорость воспроизведения).</li>
+    <li>Можно смотреть сколько угодно раз и ставить на паузу.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>2. Answer the questions 🎙</h2>
+  <div class="note">Ответь на каждый вопрос <b>голосовым сообщением</b> — полным предложением. Например: <i>In Japan, people eat rice, miso soup and fish.</i> Нажми на вопрос, когда ответила — он станет зелёным.</div>
+  <ol class="qs">
+    <li>What do people in Japan eat for breakfast?</li>
+    <li>Is breakfast in Japan heavy or light?</li>
+    <li>What do people in France eat for breakfast?</li>
+    <li>What do French people drink in the morning?</li>
+    <li>What do people in Mexico eat for breakfast? Is it spicy?</li>
+    <li>What is on the breakfast table in Turkey?</li>
+    <li>What do people in Turkey drink for breakfast?</li>
+    <li>What do people in India drink in the morning?</li>
+    <li>What do people in the USA eat for breakfast?</li>
+    <li>Are breakfast portions in the USA big or small?</li>
+    <li>What do Americans eat when they are in a hurry?</li>
+    <li>What do people in Egypt eat for breakfast?</li>
+    <li>What do people in Brazil eat for breakfast? What do they drink?</li>
+    <li>What can you sometimes find on the breakfast table in Brazil?</li>
+    <li>What is in a full English breakfast?</li>
+    <li>What do English people drink with their breakfast?</li>
+    <li>What do people in Morocco eat for breakfast?</li>
+    <li>What do people in Morocco drink in the morning?</li>
+  </ol>
+</div>
+<p class="sub" style="text-align:center">Enjoy your breakfast, Masha! 🍳</p>
+</div>
+<script>document.querySelectorAll('.qs li').forEach(li => li.onclick = () => li.classList.toggle('done'));</script>
+</body></html>
